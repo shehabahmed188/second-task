@@ -1,0 +1,55 @@
+/* الحاوية الكبيرة */
+.container {
+    width: 90%; /* خفف العرض شوية عشان المارجن */
+    margin: 0 auto; /* عشان السنتر */
+    display: flex; /* تحويل الحاوية لـ Flex */
+    flex-wrap: wrap; /* عشان لو العناصر كتير تنزل سطر جديد */
+    justify-content: space-around; /* توزيع المساحات الفاضية بالتساوي */
+    padding: 10px;
+}
+
+/* الكارت الخاص بالمنتج */
+.prodact {
+    width: 25%; /* حدد عرض ثابت لكل كارت (مثلاً 25% عشان يشيل 3 جنب بعض بمرتاح) */
+    margin: 10px; 
+    padding: 15px;
+    border: 2px solid #ccc;
+    text-align: center;
+    box-sizing: border-box; /* مهم جداً عشان الـ Padding ميزودش العرض */
+}
+
+/* الصورة داخل الكارت */
+.prodact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* ده ممتاز وبيخلي الصور متناسقة فعلاً */
+    display: block;
+}
+
+.prodact button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* الـ Clear ملوش لازمة دلوقتي مع الـ Flexbox */
+.clear {
+    display: none;
+}
+.box{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+body {
+  background-image: url('./3d-car-background-h706rbre4lzn83ot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
